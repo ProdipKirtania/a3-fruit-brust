@@ -47,7 +47,49 @@
   <body class="font-lato">
     <!-- header section -->
     <header>
-      <h1>Hello</h1>
+<!-- nav bar starts -->
+        <nav class="navbar lg:bg-primary-color md:container rounded-[600px] mx-auto my-7 flex justify-between lg:px-10 lg:py-3">
+            <div class="menu-area text-white font-semibold order-1 md:order-none">
+                <div>
+                    <div class="dropdown text-color">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                              </svg>                
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content gap-2 mt-3 z-[1] p-2 bg-primary-color rounded-box absolute right-0 w-[90vw] mx-4 shadow-lg">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                            <div class="form-control flex justify-center items-center">
+                                <input type="text" placeholder="Search" class="input w-full md:w-auto rounded-3xl">
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-black md:text-white text-3xl normal-case text- btn btn-ghost">
+                    <img src="./images/logo.png" alt="logo" class="logo w-8"><span class="text-2xl">Fruit Brust</span>
+            </div>
+            <div class="">
+                <div class="form-control hidden md:flex flex-row justify-center items-center relative">
+                    <input type="text" placeholder="Search" class="input w-24 md:w-max rounded-3xl">
+                    <img src="./images/search-icon.png" alt="search icon" class="w-5 absolute right-6 cursor-pointer">
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar ends -->
+    </header>
     </header>
     <!-- main -->
     <main></main>
