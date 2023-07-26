@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
-    <!-- Tailwind and daisy UI -->
+    <!-- daisyUI + Tailwind CSS CDN script: -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
@@ -18,13 +19,19 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind custom color -->
+    <!-- tailwind customizing configuration -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              "banner-slid-1": "url('./images/banner1.png')",
+              "banner-slid-2": "url('./images/banner2.png')",
+              "banner-slid-3": "url('./images/banner3.png')",
+              "banner-slid-4": "url('./images/banner4.png')",
+            },
             colors: {
-              clifford: "#da373d",
+              "primary-color": "#F85559",
             },
           },
         },
@@ -37,5 +44,14 @@
       }
     </style>
   </head>
-  <body></body>
+  <body class="font-lato">
+    <!-- header section -->
+    <header>
+      <h1>Hello</h1>
+    </header>
+    <!-- main -->
+    <main></main>
+    <!-- footer -->
+    <footer></footer>
+  </body>
 </html>
