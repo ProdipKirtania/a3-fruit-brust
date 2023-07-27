@@ -1,99 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Brust</title>
-    <!-- daisyUI + Tailwind CSS CDN script: -->
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- lato google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind customizing configuration -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            backgroundImage: {
-              "banner-slid-1": "url('./images/banner1.png')",
-              "banner-slid-2": "url('./images/banner2.png')",
-              "banner-slid-3": "url('./images/banner3.png')",
-              "banner-slid-4": "url('./images/banner4.png')",
-            },
-            colors: {
-              "primary-color": "#F85559",
-            },
-          },
-        },
-      };
-    </script>
-    <!-- Lato font -->
-    <style>
-      .font-lato {
-        font-family: "Lato", sans-serif;
-      }
-    </style>
-  </head>
-  <body class="font-lato">
-    <!-- header section -->
-    <header>
-<!-- nav bar starts -->
-        <nav class="navbar lg:bg-primary-color md:container rounded-[600px] mx-auto my-7 flex justify-between lg:px-10 lg:py-3">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Fruit Brust</title>
+      <!-- daisyUI + Tailwind CSS CDN script: -->
+      <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+         rel="stylesheet"
+         type="text/css"
+         />
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- fontawesome cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- tailwind customizing configuration -->
+      <script>
+         tailwind.config = {
+           theme: {
+             extend: {
+               backgroundImage: {
+                 "banner-slid-1": "url('./images/banner1.png')",
+                 "banner-slid-2": "url('./images/banner2.png')",
+                 "banner-slid-3": "url('./images/banner3.png')",
+                 "banner-slid-4": "url('./images/banner4.png')",
+               },
+               colors: {
+                 "primary-color": "#F85559",
+               },
+             },
+           },
+         };
+      </script>
+      <!-- Lato font -->
+      <style>
+         .font-lato {
+         font-family: "Lato", sans-serif;
+         }
+      </style>
+   </head>
+   <body class="font-lato">
+      <!-- header section -->
+      <header>
+         <!-- nav bar starts -->
+         <nav class="navbar lg:bg-primary-color md:max-w-[83%] rounded-full mx-auto my-7 flex justify-between lg:px-10 lg:py-3">
             <div class="menu-area text-white font-semibold order-1 md:order-none">
-                <div>
-                    <div class="dropdown text-color">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden text-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                              </svg>                
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content gap-2 mt-3 z-[1] p-2 bg-primary-color rounded-box absolute right-0 w-[90vw] mx-4 shadow-lg">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Shop</a></li>
-                            <li><a href="">All Fruits</a></li>
-                            <div class="form-control flex justify-center items-center">
-                                <input type="text" placeholder="Search" class="input w-full md:w-auto rounded-3xl">
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hidden lg:flex">
-                    <ul class="menu menu-horizontal">
+               <div>
+                  <div class="dropdown text-color">
+                     <label tabindex="0" class="btn btn-ghost lg:hidden text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                     </label>
+                     <ul tabindex="0"
+                        class="menu menu-sm dropdown-content gap-2 mt-3 z-[1] p-2 bg-primary-color rounded-box absolute right-0 w-[90vw] mx-4 shadow-lg">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
                         <li><a href="">All Fruits</a></li>
-                    </ul>
-                </div>
+                        <div class="form-control flex justify-center items-center">
+                           <input type="text" placeholder="Search" class="input w-full md:w-auto rounded-3xl">
+                        </div>
+                     </ul>
+                  </div>
+               </div>
+               <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal">
+                     <li><a href="">Home</a></li>
+                     <li><a href="">About Us</a></li>
+                     <li><a href="">Shop</a></li>
+                     <li><a href="">All Fruits</a></li>
+                  </ul>
+               </div>
             </div>
             <div class="text-black md:text-white text-3xl normal-case text- btn btn-ghost">
-                    <img src="./images/logo.png" alt="logo" class="logo w-8"><span class="text-2xl">Fruit Brust</span>
+               <img src="./images/logo.png" alt="logo" class="logo w-8"><span class="text-2xl">Fruit Brust</span>
             </div>
-            <div class="">
-                <div class="form-control hidden md:flex flex-row justify-center items-center relative">
-                    <input type="text" placeholder="Search" class="input w-24 md:w-max rounded-3xl">
-                    <img src="./images/search-icon.png" alt="search icon" class="w-5 absolute right-6 cursor-pointer">
-                </div>
+            <div class="flex-none gap-2 hidden md:inline">
+               <div class="form-control text-gray-500 relative">
+                  <input
+                     type="text"
+                     placeholder="Search here"
+                     class="input input-bordered w-52 lg:w-72 rounded-full h-10"
+                     />
+                  <i
+                     class="fa-solid fa-magnifying-glass text-gray-400 absolute right-3 top-3"
+                     ></i>
+               </div>
             </div>
-        </nav>
-        <!-- nav bar ends -->
-    </header>
-    </header>
-    <!-- main -->
-    <main></main>
-    <!-- footer -->
-    <footer></footer>
-  </body>
+         </nav>
+         <!-- nav bar ends -->
+      </header>
+      <!-- Header section ends -->
+      <!-- main section starts-->
+      <main>
+         <!-- banner section  starts-->
+         <section class="h-screen">
+            <div class="px-4 md:px-16 lg:px-28 py-4 relative h-[335px] md:h-[535px]">
+               <div class="carousel-container">
+                  <div class="carousel w-full rounded-lg h-[300px] md:h-[500px]">
+                     <!-- Slide 1 -->
+                     <div id="slide1" class="carousel-item relative w-full">
+                        <div class="hero rounded-lg h-[300px] md:h-[500px]" style="background-image: url(./images/banner4.png);">
+                           <div class="hero-overlay rounded-lg bg-gradient-to-b from-[#121212] to-[#24222204] h-[300px] md:h-[500px]"></div>
+                           <div class="hero-content text-neutral-content text-center">
+                              <div class="max-w-screen-md">
+                                 <h1 class="mb-4 text-4xl md:text-6xl font-bold">Discover Exotic Tastes at Your Doorstep</h1>
+                                 <p class="mb-5 text-sm mt-16 md:mt-0">We supply high-quality organic products</p>
+                                 <button class="btn bg-[#F85559] border-none text-white hover:text-black">Shop Now</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                           <a href="#slide4" class="btn btn-circle bg-black text-white border-none hover:text-black">❮</a>
+                           <a href="#slide2" class="btn btn-circle bg-black text-white border-none hover:text-black">❯</a>
+                        </div>
+                     </div>
+                     <!-- Slide 2 -->
+                     <div id="slide2" class="carousel-item relative w-full">
+                        <div class="hero rounded-lg h-[300px] md:h-[500px]" style="background-image: url(./images/banner4.png);">
+                           <div class="hero-overlay bg-gradient-to-b from-[#121212ca] to-[#ffffff04] h-[300px] md:h-[500px]"></div>
+                           <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-md">
+                                 <h1 class="mb-5 text-4xl md:text-5xl font-bold">Discover Exotic Tastes at Your Doorstep</h1>
+                                 <p class="mb-5 mt-16 md:mt-0">We supply high-quality organic products</p>
+                                 <button class="btn bg-[#F85559] border-none text-white hover:text-black">Shop Now</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                           <a href="#slide1" class="btn btn-circle bg-black text-white border-none hover:text-black">❮</a>
+                           <a href="#slide3" class="btn btn-circle bg-black text-white border-none hover:text-black">❯</a>
+                        </div>
+                     </div>
+                     <!-- Slide 3 -->
+                     <div id="slide3" class="carousel-item relative w-full">
+                        <div class="hero rounded-lg h-[300px] md:h-[500px]" style="background-image: url(./images/banner4.png);">
+                           <div class="hero-overlay bg-gradient-to-b from-[#121212ca] to-[#ffffff04] h-[300px] md:h-[500px]"></div>
+                           <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-md">
+                                 <h1 class="mb-5 text-4xl md:text-5xl font-bold">Discover Exotic Tastes at Your Doorstep</h1>
+                                 <p class="mb-5 mt-16 md:mt-0">We supply high-quality organic products</p>
+                                 <button class="btn bg-[#F85559] border-none text-white hover:text-black">Shop Now</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                           <a href="#slide2" class="btn btn-circle bg-black text-white border-none hover:text-black">❮</a>
+                           <a href="#slide4" class="btn btn-circle bg-black text-white border-none hover:text-black">❯</a>
+                        </div>
+                     </div>
+                     <!-- Slide 4 -->
+                     <div id="slide4" class="carousel-item relative w-full">
+                        <div class="hero rounded-lg h-[300px] md:h-[500px]" style="background-image: url(./images/banner4.png);">
+                           <div class="hero-overlay bg-gradient-to-b from-[#121212ca] to-[#ffffff04] h-[300px] md:h-[500px]"></div>
+                           <div class="hero-content text-center text-neutral-content">
+                              <div class="max-w-md">
+                                 <h1 class="mb-5 text-4xl md:text-5xl font-bold">Discover Exotic Tastes at Your Doorstep</h1>
+                                 <p class="mb-5 mt-16 md:mt-0">We supply high-quality organic products</p>
+                                 <button class="btn bg-[#F85559] border-none text-white hover:text-black">Shop Now</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                           <a href="#slide3" class="btn btn-circle bg-black text-white border-none hover:text-black">❮</a>
+                           <a href="#slide1" class="btn btn-circle bg-black text-white border-none hover:text-black">❯</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Banner-float Section -->
+               <div class="hidden md:flex items-center justify-around relative -top-16 w-5/6 mx-auto bg-white rounded-md shadow-md cursor-pointer">
+                  <div class="flex flex-col items-center flex-1 py-4 hover:bg-primary-color/60 duration-400 rounded-l-md">
+                     <img class="h-20" src="./images/fruit4.png" alt="Grape" />
+                     <p>Grape</p>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 py-4 hover:bg-primary-color/60 duration-400">
+                     <img class="h-20" src="./images/fruit2.png" alt="Orange" />
+                     <p>Orange</p>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 py-4 hover:bg-primary-color/60 duration-400">
+                     <img class="h-20" src="./images/fruit3.png" alt="Mango" />
+                     <p>Mango</p>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 py-4 hover:bg-primary-color/60 duration-400">
+                     <img class="h-20" src="./images/fruit4.png" alt="Strawberry" />
+                     <p>Strawberry</p>
+                  </div>
+                  <div class="flex flex-col items-center flex-1 py-4 hover:bg-primary-color/60 duration-300 rounded-r-md">
+                     <img class="h-20" src="./images/fruit5.png" alt="Pomegranate" />
+                     <p>Pomegranate</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+      <!-- banner section  ends-->
+      </main>
+      <!-- footer -->
+      <footer></footer>
+   </body>
 </html>
